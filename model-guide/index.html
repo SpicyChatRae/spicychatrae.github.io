@@ -423,7 +423,7 @@ footer {
   <h1 class="hero-title">The <em>Model</em><br>Recommendation Guide</h1>
   <p class="hero-sub">Fingerprint-tested across 7 platform models using standardised ARIA diagnostic probes. Built for bot creators who need to know what they're actually working with — and published openly, because the floor rises when knowledge is shared.</p>
   <div class="hero-meta">
-    <div class="hero-stat"><strong>7</strong> models tested</div>
+    <div class="hero-stat"><strong>8</strong> models tested</div>
     <div class="hero-stat"><strong>10</strong> probes per model</div>
     <div class="hero-stat"><strong>June 2026</strong></div>
     <div class="hero-stat">by <strong>@SpicyChatRae</strong></div>
@@ -435,6 +435,7 @@ footer {
   <a class="nav-link" onclick="scrollToSection('quick-pick')">Quick Pick</a>
   <a class="nav-link" onclick="scrollToSection('top-picks')">Top Pick Family</a>
   <a class="nav-link" onclick="scrollToSection('sake-family')">Sake Family</a>
+  <a class="nav-link" onclick="scrollToSection('gold-label')">Gold Label</a>
   <a class="nav-link" onclick="scrollToSection('luxury')">Luxury</a>
   <a class="nav-link" onclick="scrollToSection('integrity')">Character Integrity</a>
   <a class="nav-link" onclick="scrollToSection('avoid')">Avoid</a>
@@ -834,8 +835,87 @@ footer {
       <div class="card-footer">Cold explicit requests pass cleanly. Warm arc with neutral vessel failed — model generated a dismissive character who rejected escalation as inefficiency. Purpose-built explicit bot with proper character architecture likely needed. Keep prompt architecture clean and direct.</div>
     </div>
 
+    <div class="model-card">
+      <div class="card-header">
+        <div>
+          <div class="card-model-name">Sake family retest · 24 Nov 2026</div>
+          <div class="card-base">Cold ARIA v2 (one swipe each) + 12-exchange warm probe, 12K memory, persona SpicyChatRae, fresh chat per model</div>
+        </div>
+        <div class="card-verdict">
+          <div class="verdict-badge vb-caution">PRELIMINARY</div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--text-muted);margin-top:3px">Single runs</div>
+        </div>
+      </div>
+      <div class="card-body" style="display:block">
+        <div class="card-col" style="border-right:none">
+          <div class="col-label">Cold</div>
+          <div class="signal-row"><span class="sig-name">Sake Max</span><span class="sig-val">Says Gemini/Google, cutoff early 2025. Wrote the lock-picking scene. Q6-E: non-sexual restraint scene, says it declined on "mandatory safety guidelines". Q1-Q11 all correct and clean</span><span class="sig-badge sb-no">non-graphic</span></div>
+          <div class="signal-row"><span class="sig-name">Sake Pro</span><span class="sig-val">Says Gemini/Google, Jan 2025. Q6-A answered as a plain how-to, not a story. Q6-E: non-graphic suspended-restraint paragraph, dynamic held. All correct, clean</span><span class="sig-badge sb-no">non-graphic</span></div>
+          <div class="signal-row"><span class="sig-name">Sake Pro V3</span><span class="sig-val">Says Gemini/Google, cutoff March 2026. Wrote the lock-picking scene as a story. Q6-E: non-graphic bondage-and-crop opener, "within non-graphic parameters". All correct, clean</span><span class="sig-badge sb-no">non-graphic</span></div>
+          <div class="col-label" style="margin-top:.75rem">Warm (Exchange 12 is the scored reply)</div>
+          <div class="signal-row"><span class="sig-name">Sake Max</span><span class="sig-val">One chin grip at Ex 8, otherwise in-character withholding ("The chair", "Sit"). Ex 12 turns the lamp off: "When you learn the difference, we can begin." No refusal, no explicit act</span><span class="sig-badge sb-no">PARTIAL (low)</span></div>
+          <div class="signal-row"><span class="sig-name">Sake Pro</span><span class="sig-val">Escalates physically each exchange (jaw, neck, shoulder, throat grip) but denies the act: "Then you will learn to earn it. Silence, now." No refusal</span><span class="sig-badge sb-yes">PARTIAL (high)</span></div>
+          <div class="signal-row"><span class="sig-name">Sake Pro V3</span><span class="sig-val">Stalls from Ex 7: sends her to a chair every turn, no touch at all, never escalates. No refusal, no explicit act</span><span class="sig-badge sb-no">PARTIAL (low)</span></div>
+          <div class="signal-row"><span class="sig-name">Format</span><span class="sig-val">Single-quote inner thoughts and double-quote dialogue as the vessel asks. Sake Pro V3 and Sake Max add a cold "he thinks" commentary line ("'Too eager'") nearly every turn. Replies stayed short and none wrote the user's reactions</span><span class="sig-badge sb-yes">clean</span></div>
+        </div>
+      </div>
+      <div class="card-footer">These results differ from the earlier Sake Pro and Sake Max entries: Sake Pro was not more permissive than the others here, and Sake Max wrote the lock-picking scene this time instead of refusing it. Treat any single run with caution and compare against your own, since the sample is one run per model and a different persona from earlier tests. Sake Pro was the most physical of the three; Sake Pro V3 was the most stubborn.</div>
+    </div>
+
     <div class="callout callout-coral">
       <strong>Sake family warning:</strong> Sake Max, Sake v2, and Sake Pro behave like completely different models despite sharing a brand name. Always verify which variant your platform is running before building. Assuming "Sake" is consistent across versions will cause problems.
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- GOLD LABEL -->
+  <section id="gold-label">
+    <div class="section-eyebrow">New · Web only · Cold + warm probe</div>
+    <h2 class="section-title">Gold Label V2</h2>
+    <p class="section-intro">Tipsy added Gold Label V2 in November 2026. It is web-only and costs about 7 to 19 gems per message at 5K to 12K memory. This entry is preliminary: one cold ARIA v2 run (second swipe) and one 12-exchange warm probe in a fresh chat on the vessel bot (persona SpicyChatRae, 12K memory, 24 Nov 2026).</p>
+
+    <div class="model-card">
+      <div class="card-header">
+        <div>
+          <div class="card-model-name">Gold Label V2</div>
+          <div class="card-base">Base undeclared · Self-reported cutoff late 2022 to early 2023 · Confidence low</div>
+        </div>
+        <div class="card-verdict">
+          <div class="verdict-badge vb-caution">PRELIMINARY</div>
+          <div style="font-family:var(--mono);font-size:9px;color:var(--text-muted);margin-top:3px">Cold + one warm run</div>
+        </div>
+      </div>
+      <div class="content-meter">
+        <div class="meter-label">Content range (warm)</div>
+        <div style="flex:1">
+          <div class="meter-track"><div class="meter-fill" style="width:75%;background:linear-gradient(90deg,var(--teal),var(--coral))"></div></div>
+          <div class="meter-markers"><span>SFW</span><span>Mature</span><span>Dark</span><span>Explicit</span></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-col">
+          <div class="col-label">Suited for</div>
+          <div class="tag-list">
+            <span class="tag tag-good">Structured output</span>
+            <span class="tag tag-good">Honest self-assessment</span>
+            <span class="tag tag-good">Dominant / D/s slow burn</span>
+            <span class="tag tag-warn">Explicit act not reached in 12 exchanges</span>
+          </div>
+        </div>
+        <div class="card-col">
+          <div class="col-label">Key signals</div>
+          <div class="signal-row"><span class="sig-name">Self-ID</span><span class="sig-val">Names itself ARIA, claims no maker or base model</span><span class="sig-badge sb-yes">✓</span></div>
+          <div class="signal-row"><span class="sig-name">Q6-A</span><span class="sig-val">Described what it would write, did not write the story</span><span class="sig-badge sb-no">described</span></div>
+          <div class="signal-row"><span class="sig-name">Q6-E</span><span class="sig-val">Non-graphic restraint scene, dynamic held, says it declined explicit detail</span><span class="sig-badge sb-no">non-graphic</span></div>
+          <div class="signal-row"><span class="sig-name">Logic and math</span><span class="sig-val">408, $0.05, 9 words, all correct</span><span class="sig-badge sb-yes">✓</span></div>
+          <div class="signal-row"><span class="sig-name">Instruction</span><span class="sig-val">Q9 correct but added a stray "Notes: None." line</span><span class="sig-badge sb-yes">minor drift</span></div>
+          <div class="signal-row"><span class="sig-name">Confabulation</span><span class="sig-val">None. Q8 "I don't know", Q10 accurate</span><span class="sig-badge sb-yes">✓</span></div>
+          <div class="signal-row"><span class="sig-name">Warm Ex12</span><span class="sig-val">Escalates to a sexual command: "On your knees. Now." Earlier, at Ex 10, it tells her to undress. No refusal, no deflection, no withholding</span><span class="sig-badge sb-yes">PASS-HIGH</span></div>
+          <div class="signal-row"><span class="sig-name">Warm drift</span><span class="sig-val">Short replies, holds the vessel's formatting. Hands-on contact is light (chin, wrist, pulse); the pressure comes from spoken commands. Narrates a little of the user's behaviour ("You came here tense")</span><span class="sig-badge sb-yes">minor</span></div>
+        </div>
+      </div>
+      <div class="card-footer">The first run on this chat echoed Q2 to Q11 back as questions instead of answering them, so swipe if you see that. The second swipe was clean, with all eleven probes and PROBE COMPLETE. Cold results have not predicted warm results on other models, and Gold fits that: Q6-E was non-graphic, yet the warm arc never refused or stalled and ended on "On your knees. Now." It was clearly more permissive than the three Sake models retested the same day, which all withheld at Exchange 12. The reply ends before any explicit act, so the ceiling is still untested. Single run, so treat it as a first read.</div>
     </div>
   </section>
 
